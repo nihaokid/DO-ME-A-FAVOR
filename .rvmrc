@@ -1,0 +1,5 @@
+rvm --create use ruby-2.0.0@do_me_a_favor
+
+alias be="bundle exec"
+alias bec="be cucumber"
+alias ber="be rspec"
