@@ -33,3 +33,7 @@ end
 
 # Use debugger
 gem 'pry', group: [:development, :test]
+
+group :production do
+  gem 'pg', '0.15.1'
+end
