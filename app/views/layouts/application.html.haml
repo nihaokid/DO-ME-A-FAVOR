@@ -1,0 +1,9 @@
+%html
+  %head
+    %meta{:charset => "UTF-8"}
+    %title
+      Do Me A Favor
+    = stylesheet_link_tag 'application', :media => "all", "data-turbolinks-track" => true
+    = csrf_meta_tag
+  %body
+    = yield
