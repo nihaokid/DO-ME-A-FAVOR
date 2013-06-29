@@ -7,6 +7,7 @@ gem 'sass-rails', '4.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.0'
+gem 'haml', '~> 4.0.3'
 gem 'jquery-rails', '2.2.1'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -19,7 +20,7 @@ group :doc do
 end
 
 group :development do
-  gem 'sqlite3', '1.3.7'
+  gem 'mysql2', '0.3.11'
 end
 
 # Use ActiveModel has_secure_password
