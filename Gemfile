@@ -25,6 +25,12 @@ group :development do
   gem 'rspec-rails', '~> 2.0'
 end
 
+gem 'pry', group: [:development, :test]
+
+group :production do
+  gem 'pg', '0.15.1'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -33,10 +39,3 @@ end
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
-
-# Use debugger
-gem 'pry', group: [:development, :test]
-
-group :production do
-  gem 'pg', '0.15.1'
-end

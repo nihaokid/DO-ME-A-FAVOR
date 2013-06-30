@@ -3,6 +3,7 @@ DoMeAFavor::Application.routes.draw do
   # root 'welcome#index'
 
   get '/about' => 'welcome#about'
+  get '/signup' => 'users#new'
 
 
   # Example of regular route:
