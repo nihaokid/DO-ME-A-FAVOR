@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '4.0.0'
+gem 'mysql2', '0.3.11'
 gem 'sass-rails', '4.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.1.1'
@@ -21,11 +22,14 @@ group :doc do
 end
 
 group :development do
-  gem 'mysql2', '0.3.11'
+  gem 'better_errors', '~> 0.9.0'
+  gem 'binding_of_caller', '~> 0.7.2'
+  gem 'meta_request', '~> 0.2.7'
+end
+group :development, :test do
+  gem 'pry'
   gem 'rspec-rails', '~> 2.0'
 end
-
-gem 'pry', group: [:development, :test]
 
 group :production do
   gem 'pg', '0.15.1'
